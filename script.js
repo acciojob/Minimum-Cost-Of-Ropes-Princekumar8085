@@ -1,6 +1,7 @@
 function calculateMinCost() {
   //your code here
-  var inputData = document.querySelector("#rope-lengths").value;
+  // read data from input element;
+	var inputData = document.querySelector("#rope-lengths").value;
 	var inputArr = inputData.split(",");
 
 	for(var i = 0; i< inputArr.length; i++) {
@@ -20,6 +21,5 @@ function calculateMinCost() {
 		inputArr.sort(function(a,b) { return a-b});
 	}	
   document.querySelector("#result").textContent = cost;
-  
-  
-}  
+
+} 
